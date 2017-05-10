@@ -1,0 +1,233 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Aplic. Web de jQuery Mobile</title>
+<link href="jquery-mobile/jquery.mobile.theme-1.0.min.css" rel="stylesheet" type="text/css"/>
+<link href="jquery-mobile/jquery.mobile.structure-1.0.min.css" rel="stylesheet" type="text/css"/>
+<script src="jquery-mobile/jquery-1.6.4.min.js" type="text/javascript"></script>
+<script src="jquery-mobile/jquery.mobile-1.0.min.js" type="text/javascript"></script>
+<style>
+#navlist{position:relative;}
+#navlist li{margin:0;padding:0;list-style:none;position:absolute;top:0;}
+#navlist li, #navlist a{height:44px;display:block;}
+
+#home{left:0px;width:46px;}
+#home{background:url('img_navegacion.gif') 0 0;}
+
+#prev{left:63px;width:43px;}
+#prev{background:url('img_navegacion.gif') -47px 0;}
+
+#next{left:129px;width:43px;}
+#next{background:url('img_navegacion.gif') -91px 0;}
+</style>
+<style>
+	#navegacion{
+		width: 100%;
+		height: 11%;
+		top: 0%;
+		left: 0;
+		position: absolute;
+		background-color: #B7B7B7;
+	}
+</style>
+<style type="text/css">
+#ampliar img{
+-webkit-transform:scale(1); 
+-moz-transform:scale(1); 
+-o-transform:scale(1); 
+-webkit-transition-duration: 0.5s; 
+-moz-transition-duration: 0.5s; 
+-o-transition-duration: 0.5s;
+opacity: 0.5;
+}
+#ampliar img:hover{
+-webkit-transform:scale(2); 
+-moz-transform:scale(2); 
+-o-transform:scale(2); 
+-webkit-transition-duration: 0.5s;
+-moz-transition-duration: 0.5s; 
+-o-transition-duration: 0.5s;
+opacity: 1;
+}
+</style>
+<style>
+	#tabla1{
+		width: 19%;
+		height: 34%;
+		top: 43%;
+		left: 25%;
+		position: absolute;
+	}
+</style>
+<style>
+	#goleo1{
+		width: 20%;
+		height: 25%;
+		top: 45%;
+		left: 65%;
+		position: absolute;
+	}
+</style>
+<style>
+	#liga1{
+		width: 20%;
+		height: 25%;
+		top: 55%;
+		left: 5%;
+		position: absolute;
+	}
+</style>
+<style>
+	#liga2{
+		width: 20%;
+		height: 25%;
+		top: 55%;
+		left: 35%;
+		position: absolute;
+	}
+</style>
+<style>
+	#liga3{
+		width: 20%;
+		height: 25%;
+		top: 55%;
+		left: 55%;
+		position: absolute;
+	}
+</style>
+<style>
+	#liga4{
+		width: 20%;
+		height: 25%;
+		top: 55%;
+		left: 75%;
+		position: absolute;
+	}
+</style>
+</head> 
+<body> 
+
+<div data-role="page" id="page">
+	<div data-role="header">
+		<h1>LIGAS DE FUTBOL</h1>
+	</div>
+	<div data-role="content">	
+		<ul data-role="listview">
+			<li><a href="#page2">BUNDESLIGA</a></li>
+            <li><a href="#page3">PREMIER LEAGUE</a></li>
+			<li><a href="#page4">LA LIGA</a></li>
+			<li><a href="#page5">LIGA MX</a></li>
+		</ul>		
+	</div>
+	<div data-role="footer">
+		<h4>PASA EL CURSOR SOBRE LAS IMAGENES</h4>
+	</div>
+	<div id="liga1"><div id="ampliar"><img src="/Users/Ivan/Documents/Sitio sin nombre 3/IMAGENES/file_20150813164309.jpg" width="100%" height="100%"></div></div>
+	<div id="liga2"><div id="ampliar"><img src="/Users/Ivan/Documents/Sitio sin nombre 3/IMAGENES/Premier-League.png" width="80%" height="80%"></div></div>
+	<div id="liga3"><div id="ampliar"><img src="/Users/Ivan/Documents/Sitio sin nombre 3/IMAGENES/laliga-v-600x600.png" width="70%" height="70%"></div></div>
+	<div id="liga4"><div id="ampliar"><img src="/Users/Ivan/Documents/Sitio sin nombre 3/IMAGENES/i.png" width="70%" height="70%"></div></div>
+</div>
+
+<div data-role="page" id="page2">
+<br>
+<br>
+<br>
+	<div id="navegacion"><ul id="navlist">
+  <li id="home"><a href="#page"></a></li>
+  <li id="prev"><a href="#page"></a></li>
+  <li id="next"><a href="#page3"></a></li>
+</ul>
+</div>
+<br>
+	<div data-role="header">
+		<h1>BUNDESLIGA</h1>
+	</div>
+	<div data-role="content">	
+		<font size="3" color="blue">La Bundesliga (en español, Liga Federal de Fútbol) es la competición entre los equipos de fútbol de la máxima categoría de Alemania. Se comenzó a disputar en 1963, a partir de la unificación de los antiguos campeonatos zonales llamados Oberligas. Junto con la 2. Bundesliga y 3. Liga, forman las tres divisiones nacionales del fútbol alemán.
+		</font></div>
+	<div data-role="footer">
+		<h4>PASA EL CURSOR POR ENCIMA DE LAS IMAGENES PARA VER LA TABAL GENERAL Y DE GOLEO</h4>
+	</div>
+	<div id="tabla1"><div id="ampliar"><img src="/Users/Ivan/Documents/Sitio sin nombre 3/IMAGENES/CbC15ebW4AEz_r4.png" width="90%" height="90%"></div></div>
+    <div id="goleo1"><div id="ampliar"><img src="/Users/Ivan/Documents/Sitio sin nombre 3/IMAGENES/Captura-de-pantalla-2014-12-03-21.58.08.png" width="90%" height="90%"></div></div> 
+	</div>
+</div>
+
+<div data-role="page" id="page3">
+<br>
+<br>
+<br>
+	<div id="navegacion">
+	<ul id="navlist">
+  <li id="home"><a href="#page"></a></li>
+  <li id="prev"><a href="#page2"></a></li>
+  <li id="next"><a href="#page4"></a></li>
+</ul>
+</div>	
+<br>
+	<div data-role="header">
+		<h1>PREMIER LEAGUE</h1>
+	</div>
+	<div data-role="content">	
+		<font size="3" color="blue">La Premier League, también conocida en el Reino Unido como The Premiership, es la máxima categoría del sistema de Ligas de fútbol de Inglaterra. Comenzó a disputarse en la temporada 1992-93 y desde entonces se ha celebrado sin interrupciones. En ella pueden también participar, por motivos históricos, aquellos clubes galeses que lo deseen, siempre que hayan competido ininterrumpidamente en el sistema de fútbol federado inglés desde, al menos, el 30 de junio de 1992. Este es el caso del Swansea City Association Football Club, club radicado en Gales participante de la liga y que ha llegado a representar a Inglaterra en competiciones europeas.</font>		
+	</div>
+	<div data-role="footer">
+		<h4>PASA EL CURSOR POR ENCIMA DE LAS IMAGENES PARA VER LA TABAL GENERAL Y DE GOLEO</h4>
+	</div>
+	<div id="tabla1"><div id="ampliar"><img src="/Users/Ivan/Documents/Sitio sin nombre 3/IMAGENES/tablainglaterra.png" width="90%" height="90%"></div></div>
+    <div id="goleo1"><div id="ampliar"><img src="/Users/Ivan/Documents/Sitio sin nombre 3/IMAGENES/c001b7c64f978f1ad4bacc94394a5209.jpg" width="90%" height="90%"></div></div>
+</div>
+
+<div data-role="page" id="page4">
+<br>
+<br>
+<br>
+	<div id="navegacion">
+	<ul id="navlist">
+  <li id="home"><a href="#page"></a></li>
+  <li id="prev"><a href="#page3"></a></li>
+  <li id="next"><a href="#page5"></a></li>
+</ul>
+</div>
+<br>
+	<div data-role="header">
+		<h1>LA LIGA</h1>
+	</div>
+	<div data-role="content">	
+		<font size="3" color="blue">La Primera División de España, conocida como LaLiga1 o por motivos de patrocinio como LaLiga Santander,2 es la máxima categoría del sistema de Ligas de fútbol de España. Organizada desde 1984 por la Liga Nacional de Fútbol Profesional (LFP) tras suceder a la Federación Española (RFEF), comenzó a disputarse en la temporada 1928-29 siendo celebrada desde entonces sin interrupciones, con la excepción del período entre 1936 y 1939 por la Guerra Civil Española.</font>
+	</div>
+	<div data-role="footer">
+		<h4>PASA EL CURSOR POR ENCIMA DE LAS IMAGENES PARA VER LA TABAL GENERAL Y DE GOLEO</h4>
+	</div>
+	<div id="tabla1"><div id="ampliar"><img src="/Users/Ivan/Documents/Sitio sin nombre 3/IMAGENES/1512934.jpg" width="90%" height="90%"></div></div>
+    <div id="goleo1"><div id="ampliar"><img src="/Users/Ivan/Documents/Sitio sin nombre 3/IMAGENES/15016_maximo_goleador_ligabbva_jornada_38.png" width="90%" height="90%"></div></div>
+</div>
+
+<div data-role="page" id="page5">
+<br>
+<br>
+<br>
+	<div id="navegacion">
+	<ul id="navlist">
+  <li id="home"><a href="#page"></a></li>
+  <li id="prev"><a href="#page4"></a></li>
+  <li id="next"><a href="#page"></a></li>
+</ul>
+</div>
+<br>
+	<div data-role="header">
+		<h1>LIGA MX</h1>
+	</div>
+	<div data-role="content">	
+		<font size="3" color="blue">La Primera División de México, también conocida simplemente como Liga MX o por motivos de patrocinio Liga BBVA Bancomer MX,1 2 3 es la liga de fútbol profesional más importante de México, es el primer nivel en el sistema de ligas de dicho país. Se juegan dos torneos cortos por ciclo anual futbolístico (cada uno con su campeón) denominados Apertura y Clausura (en ese orden), antes llamados Invierno y Verano respectivamente. </font>	
+	</div>
+	<div data-role="footer">
+		<h4>PASA EL CURSOR POR ENCIMA DE LAS IMAGENES PARA VER LA TABAL GENERAL Y DE GOLEO</h4>
+	</div>
+	<div id="tabla1"><div id="ampliar"><img src="/Users/Ivan/Documents/Sitio sin nombre 3/IMAGENES/tg13.JPG" width="90%" height="90%"></div></div>
+    <div id="goleo1"><div id="ampliar"><img src="/Users/Ivan/Documents/Sitio sin nombre 3/IMAGENES/goleojpg_2015510193514.jpg" width="90%" height="90%"></div></div>
+</div>
+
+</body>
+</html>
